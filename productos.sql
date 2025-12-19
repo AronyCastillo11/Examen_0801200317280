@@ -1,8 +1,7 @@
--- Crear base de datos si no existe
+-- Crear DB y tabla (exacta como te dio el ing)
 CREATE DATABASE IF NOT EXISTS examen;
 USE examen;
 
--- Crear tabla productos (exacta como te dio el ing)
 CREATE TABLE productos (
     producto_id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100),
@@ -11,25 +10,25 @@ CREATE TABLE productos (
     estado VARCHAR(20)
 );
 
--- Insertar 20 registros válidos (datos reales de inventario)
+-- 20 INSERTs válidos (productos variados para inventario)
 INSERT INTO productos (nombre, descripcion, precio, estado) VALUES
-('Laptop Dell XPS 13', 'Ultrabook con procesador Intel i7, 16GB RAM y SSD 512GB', 1299.99, 'Activo'),
-('iPhone 15', 'Smartphone con cámara de 48MP y chip A16 Bionic', 799.00, 'Activo'),
-('Camisa Polo Ralph Lauren', 'Camisa casual de algodón pima con cuello clásico', 89.50, 'Activo'),
-('Auriculares AirPods Pro', 'Inalámbricos con Active Noise Cancellation', 249.00, 'Inactivo'),
-('Escritorio Ergonómico', 'Mesa ajustable en altura para oficina en casa', 299.00, 'Activo'),
-('Zapatillas Nike Air Force 1', 'Sneakers icónicas de cuero blanco', 110.00, 'Activo'),
-('TV OLED LG 55"', 'Televisor 4K con Dolby Vision y webOS', 1499.00, 'Activo'),
-('Libro "Clean Code"', 'Guía esencial para programadores sobre código limpio', 42.00, 'Activo'),
-('Cafetera Keurig K-Mini', 'Máquina de café compacta con pod single-serve', 79.99, 'Inactivo'),
-('Bicicleta Eléctrica Rad Power', 'E-bike urbana con batería de 48V', 1599.00, 'Activo'),
-('Reloj Apple Watch Series 9', 'Smartwatch con GPS y sensor de oxígeno en sangre', 399.00, 'Activo'),
-('Silla Eames Lounge', 'Silla de diseño icónica en cuero y madera', 5500.00, 'Activo'),
-('iPad Pro 12.9"', 'Tablet con chip M2 y pantalla Liquid Retina XDR', 1099.00, 'Activo'),
-('Jeans Levi\'s 501', 'Pantalones vaqueros originales straight fit', 69.50, 'Inactivo'),
-('Impresora Epson EcoTank', 'Impresora inkjet sin cartuchos con tanques recargables', 199.99, 'Activo'),
-('Juego de Toallas Cotton', 'Set de 6 toallas de baño en algodón egipcio', 45.00, 'Activo'),
-('Cámara Canon EOS R5', 'Mirrorless full-frame con 45MP y 8K video', 3899.00, 'Activo'),
-('Guitarra Eléctrica Fender Stratocaster', 'Guitarra legendaria con pastillas single-coil', 799.00, 'Inactivo'),
-('Refrigerador Samsung French Door', 'Fridge de 23 cu ft con dispensador de agua', 1899.00, 'Activo'),
-('Perfume Dior Sauvage', 'Eau de Toilette para hombre con notas amaderadas', 115.00, 'Activo');
+('Laptop HP Pavilion', 'Portátil gaming con i5, 8GB RAM y GPU dedicada', 899.99, 'Activo'),
+('Samsung Galaxy S23', 'Smartphone Android con pantalla AMOLED 6.1"', 699.00, 'Activo'),
+('Sudadera Adidas Originals', 'Hoodie unisex en felpa suave con logo clásico', 59.99, 'Activo'),
+('Mouse Logitech MX Master', 'Ratón ergonómico inalámbrico con scroll infinito', 99.99, 'Inactivo'),
+('Lámpara de Escritorio LED', 'Luz ajustable con 3 modos y carga USB', 29.50, 'Activo'),
+('Botas Timberland', 'Botas impermeables de cuero para trekking', 149.00, 'Activo'),
+('Monitor Dell 27"', 'Pantalla IPS Full HD con altavoces integrados', 199.99, 'Activo'),
+('Cuaderno Moleskine', 'Libreta dura de 240 páginas rayada', 24.99, 'Activo'),
+('Tostadora Cuisinart', 'Tostadora de 2 rebanadas con ajuste de dorado', 39.99, 'Inactivo'),
+('Patineta Eléctrica Xiaomi', 'Scooter con motor 250W y batería 30km autonomía', 399.00, 'Activo'),
+('Aros de Oro 14K', 'Pendientes simples para uso diario', 250.00, 'Activo'),
+('Tapete de Yoga Manduka', 'Mat antideslizante de 6mm grosor', 89.99, 'Activo'),
+('Kindle Paperwhite', 'Lector e-books impermeable con luz ajustable', 129.99, 'Activo'),
+('Bufanda de Lana Cashmere', 'Bufanda suave en tono neutro para invierno', 79.50, 'Inactivo'),
+('Escáner Canon', 'Escáner de documentos portátil A4', 89.00, 'Activo'),
+('Set de Ollas Tefal', 'Juego de 5 piezas antiadherente inducción', 199.99, 'Activo'),
+('Altavoz Bluetooth JBL', 'Speaker portátil resistente al agua IPX7', 129.00, 'Activo'),
+('Batería Externa Anker', 'Power bank 20000mAh con carga rápida', 49.99, 'Inactivo'),
+('Ventilador Dyson', 'Ventilador sin aspas torre con control remoto', 349.00, 'Activo'),
+('Vela Aromática Yankee', 'Vela de soja con aroma vainilla 3 mechas', 29.99, 'Activo');
